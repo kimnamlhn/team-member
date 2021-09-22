@@ -39,9 +39,9 @@
     margin-bottom: 800px;
 } */
 
-.wrapper{
+.member-wrapper{
     display: flex;
-}
+    justify-content: center;}
 
 .info{
     display: inline-block;
