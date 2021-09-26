@@ -1,52 +1,60 @@
-.wrapper h1{
-    font-family: 'Allura', cursive;
-    font-size: 100px;
-    margin-bottom: 60px;
+@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,700,900|Roboto:300,400,500,700");
+body {
+    background-image: url('./images/background.jpg');
+
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
     text-align: center;
-}
-
-.team{
-    display:flex;
-    text-align: center;
-    width: auto;
-    justify-content: center;
 
 }
 
-.member{
-	width: 33.33%;
-	float: left;
-	padding-left: 0px;
-}
-.member h2{
-    color: #81c644;
-    font-size: 40px;
-}
-
-.member img{
-    width: 50%;
-
-}
-
-.member-image{
-    width: 10%;
-    display: inline-flex ;
-
-}
-
-/* .info{
-    margin-left: 200px;
-    margin-bottom: 800px;
-} */
-
-.member-wrapper{
+.container {
+    position: relative;
     display: flex;
-    justify-content: center;}
-
-.info{
-    display: inline-block;
-
+    align-items: center;
+    border-radius: 12px;
+    background: #fff;
+    text-align: left;
+    box-shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.3);
+    box-sizing: border-box;
 }
+
+
+h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+
+
+.team-img {
+    text-align: center;
+    width: 900px;
+    height: 600px;
+    margin-right: 50px;
+}
+
+.team-img img {
+    border-radius: 12px;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    font-size: 16px;
+    margin-bottom: 13px;
+}
+
 
 
 
