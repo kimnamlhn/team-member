@@ -12,9 +12,9 @@
         <div class="team-img">
             <img class="background" src="./images/team-image.jpg" alt="team image" usemap="#workmap">
             <map name="workmap">
-                <area shape="rect" coords="0,0,400,600" alt="member1" href="#">
-                <area shape="rect" coords="400,0,600,600" alt="member2" href="#">
-                <area shape="rect" coords="600,0,900,600" alt="member3" href="#">
+                <area shape="rect" coords="223,84,332,531" alt="member1" href="./members/18120598/18120598.html">
+                <area shape="rect" coords="372,73,523,548" alt="member2" href="./members/18120270/18120270.html">
+                <area shape="rect" coords="520,57,673,543" alt="member3" href="./members/18120468/18120468.html">
             </map>
         </div>
         <div class="team-info">
@@ -26,5 +26,33 @@
             </ul>
         </div>
     </div>
+
+    <script>
+        document.addEventListener("click", handleMouseMove);
+    function handleMouseMove(event) {
+        var eventDoc, doc, body;
+
+        event = event || window.event; // IE-ism
+
+        // If pageX/Y aren't available and clientX/Y are,
+        // calculate pageX/Y - logic taken from jQuery.
+        // (This is to support old IE)
+        if (event.pageX == null && event.clientX != null) {
+            eventDoc = (event.target && event.target.ownerDocument) || document;
+            doc = eventDoc.documentElement;
+            body = eventDoc.body;
+
+            event.pageX = event.clientX +
+              (doc && doc.scrollLeft || body && body.scrollLeft || 0) -
+              (doc && doc.clientLeft || body && body.clientLeft || 0);
+            event.pageY = event.clientY +
+              (doc && doc.scrollTop  || body && body.scrollTop  || 0) -
+              (doc && doc.clientTop  || body && body.clientTop  || 0 );
+        }
+
+        // Use event.pageX / event.pageY here
+        console.log(event.pageX,event.pageY);
+    }
+    </script>
 </body>
 </html>
