@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Team member</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="./styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
 <body>
     <div class="container">
@@ -19,40 +19,12 @@
         </div>
         <div class="team-info">
             <h1>TEAM: TNT</h1>
-            <ul class="list">
+            <ul class="list-detail">
                 <li><i class="fas fa-user-graduate"></i> 18120598 - Huỳnh Gia Toại</li>
                 <li><i class="fas fa-user-graduate"></i> 18120468 - Lê Hoài Nam</li>
                 <li><i class="fas fa-user-graduate"></i> 18120270 - Trang Thanh Trúc</li>
             </ul>
         </div>
     </div>
-
-    <script>
-        document.addEventListener("click", handleMouseMove);
-    function handleMouseMove(event) {
-        var eventDoc, doc, body;
-
-        event = event || window.event; // IE-ism
-
-        // If pageX/Y aren't available and clientX/Y are,
-        // calculate pageX/Y - logic taken from jQuery.
-        // (This is to support old IE)
-        if (event.pageX == null && event.clientX != null) {
-            eventDoc = (event.target && event.target.ownerDocument) || document;
-            doc = eventDoc.documentElement;
-            body = eventDoc.body;
-
-            event.pageX = event.clientX +
-              (doc && doc.scrollLeft || body && body.scrollLeft || 0) -
-              (doc && doc.clientLeft || body && body.clientLeft || 0);
-            event.pageY = event.clientY +
-              (doc && doc.scrollTop  || body && body.scrollTop  || 0) -
-              (doc && doc.clientTop  || body && body.clientTop  || 0 );
-        }
-
-        // Use event.pageX / event.pageY here
-        console.log(event.pageX,event.pageY);
-    }
-    </script>
 </body>
 </html>

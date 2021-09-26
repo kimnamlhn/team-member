@@ -1,12 +1,11 @@
+/* base */
 @import url("https://fonts.googleapis.com/css?family=Heebo:300,400,700,900|Roboto:300,400,500,700");
 body {
     background-image: url('./images/background.jpg');
-
     font-size: 16px;
     font-family: "Roboto", sans-serif;
     font-weight: normal;
     text-align: center;
-
 }
 
 .container {
@@ -20,13 +19,14 @@ body {
     box-sizing: border-box;
 }
 
+/* end base */
 
+
+/* team members page */
 h1 {
     font-size: 48px;
     text-transform: uppercase;
 }
-
-
 
 .team-img {
     text-align: center;
@@ -41,19 +41,52 @@ h1 {
     width: 100%;
 }
 
-
-
-
-
-.list {
+.list-detail {
     list-style: none;
     padding: 0;
 }
 
-.list li {
+.list-detail li {
     font-size: 16px;
     margin-bottom: 13px;
 }
+
+/* end team members page */
+
+
+/* personal member page */
+.personal-image {
+    height: 560px;
+    width: 420px;
+    box-shadow: 0px 20px 80px 0px rgba(153, 153, 153, 0.3);
+    margin-right: 125px;
+}
+
+.personal-image img {
+    border-radius: 12px;
+    height: 100%;
+    width: 100%;
+}
+
+.personal-info h3 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.personal-info h4 {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 30px;
+}
+
+.personal-info a {
+    text-decoration: none;
+}
+
+
+/* end personal member page */
 
 
 
